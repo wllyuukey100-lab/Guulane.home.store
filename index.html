@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUULANE HOME STORE</title>
+    <link rel="stylesheet" href="style.css">
+</head><body><header>
+    <div class="logo">
+        <div class="logo-icon">🏠</div>
+        <div>
+            <h1>GUULANE</h1>
+            <span>HOME STORE</span>
+        </div>
+    </div><nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<a href="#cart" class="cart">
+    🛒 Cart (<span id="cart-count">0</span>)
+</a>
+
+</header><section class="hero" id="home">
+    <div class="hero-content">
+        <span class="welcome">WELCOME TO GUULANE</span>
+        <h2>Make Your Home<br>Beautiful & Comfortable</h2>
+        <p>Everything Your Home Needs</p>
+        <a href="#products" class="shop-btn">SHOP NOW →</a>
+    </div>
+</section><section class="features">
+    <div>🚚<h3>Fast Delivery</h3><p>Quick and reliable service</p></div>
+    <div>⭐<h3>Quality Products</h3><p>Best products for your home</p></div>
+    <div>💬<h3>Customer Support</h3><p>We are here to help you</p></div>
+</section><section class="products" id="products"><h2>Our Products</h2>
+<p class="subtitle">Discover Something Beautiful For Your Home</p>
+
+<input type="text" id="search"
+placeholder="Search for products..." onkeyup="searchProducts()">
+
+<div class="product-container">
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=500" alt="Kitchenware">
+        <h3>Kitchenware</h3>
+        <p>Quality Kitchen Products</p>
+        <h4>$15</h4>
+        <button onclick="addToCart('Kitchenware',15)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1584990347449-a7e5a5c9e8b7?w=500" alt="Cookware">
+        <h3>Cookware</h3>
+        <p>Modern Cooking Equipment</p>
+        <h4>$25</h4>
+        <button onclick="addToCart('Cookware',25)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?w=500" alt="Dinnerware">
+        <h3>Dinnerware</h3>
+        <p>Beautiful Plates and Cups</p>
+        <h4>$20</h4>
+        <button onclick="addToCart('Dinnerware',20)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1576021182211-9ea8dced3690?w=500" alt="Tea Sets">
+        <h3>Tea Sets</h3>
+        <p>Beautiful Tea Sets</p>
+        <h4>$18</h4>
+        <button onclick="addToCart('Tea Sets',18)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500" alt="Cleaning Tools">
+        <h3>Cleaning Tools</h3>
+        <p>Quality Cleaning Equipment</p>
+        <h4>$12</h4>
+        <button onclick="addToCart('Cleaning Tools',12)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=500" alt="Home Decoration">
+        <h3>Home Decoration</h3>
+        <p>Beautiful Home Decorations</p>
+        <h4>$30</h4>
+        <button onclick="addToCart('Home Decoration',30)">Add to Cart</button>
+    </div>
+
+</div>
+
+</section><section class="shopping-cart" id="cart">
+    <h2>🛒 Your Shopping Cart</h2><div id="cart-items">Your cart is empty.</div>
+
+<h3>Total: $<span id="total">0</span></h3>
+
+<button onclick="checkout()">ORDER ON WHATSAPP</button>
+
+</section><section class="about" id="about">
+    <h2>About Guulane Home Store</h2>
+    <p>
+        Guulane Home Store is an online shopping store
+        offering quality kitchenware, cookware, dinnerware
+        and beautiful home products. Our mission is to make
+        your home shopping experience easy, affordable and enjoyable.
+    </p>
+</section><section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>We are always ready to serve you.</p><div class="contact-info">
+    <p>📞 Phone: <a href="tel:+252614495294">+252 614 495 294</a></p>
+
+    <p>📧 Email:
+    <a href="mailto:Wllyuukey100@gmail.com">
+    Wllyuukey100@gmail.com</a></p>
+
+    <p>💬 WhatsApp:
+    <a href="https://wa.me/252614495294" target="_blank">
+    Chat With Us</a></p>
+</div>
+
+</section><footer>
+    <h2>GUULANE HOME STORE</h2>
+    <p>Everything Your Home Needs</p>
+    <p>© 2026 GUULANE HOME STORE. All Rights Reserved.</p>
+</footer><script src="script.js"></script></body>
+</html>
